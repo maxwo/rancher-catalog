@@ -1,0 +1,12 @@
+.catalog
+  name: "Healthcheck"
+  description: "A dummy project implementing a health check for testing purposes."
+  version: "0.6-rancher2"
+  uuid: healthcheck
+
+healthcheck:
+  scale: 1
+  health_check:
+    port: 8080
+    request_line: GET /healthcheck HTTP/1.0
+    strategy: none

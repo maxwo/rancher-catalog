@@ -1,0 +1,7 @@
+healthcheck:
+  image: maxwoj/healthcheck:latest
+  ports:
+    - 8080
+  labels:
+    SERVICE_TAGS: traefik.frontend.rule=PathPrefixStrip:/healthcheck
+    SERVICE_8080_CHECK_HTTP: /healthcheck

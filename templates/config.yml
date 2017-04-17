@@ -1,0 +1,8 @@
+name: Healthcheck# Name of the Catalog Entry
+description: |
+  A dummy project implementing a health check for testing purposes.
+version: 0.6-rancher2 # Version of the Catalog to be used
+category: Testing # Category to be used for searching catalog entries
+maintainer: Maxime Wojtczak # The maintainer of the catalog entry
+license: MIT # The license
+projectURL: https://github.com/maxwo/healthcheck # A URL related to the catalog entry
