@@ -7,4 +7,4 @@ A dummy project implementing a health check for testing purposes.
 curl http://127.0.0.1:8080/healthcheck
 
 ## Set healthcheck state
-curl -X PUT -d "true" http://127.0.0.1/healthcheck
+curl -X PUT -H 'Content-type: application/json' -d 'true' http://127.0.0.1:8080/healthcheck
