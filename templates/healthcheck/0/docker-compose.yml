@@ -3,5 +3,5 @@ healthcheck:
   ports:
     - 8080
   labels:
-    SERVICE_TAGS: traefik.frontend.rule=PathPrefixStrip:/healthcheck
+    SERVICE_TAGS: traefik.tags=test,traefik.frontend.rule=PathPrefixStrip:/healthcheck
     SERVICE_8080_CHECK_HTTP: /healthcheck
