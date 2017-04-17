@@ -1,7 +1,7 @@
 name: Healthcheck
 description: |
   A dummy project implementing a health check for testing purposes.
-version: 0.6-rancher2
+version: 0.1.0
 category: Testing
 maintainer: Maxime Wojtczak
 license: MIT
