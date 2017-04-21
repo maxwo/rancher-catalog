@@ -1,0 +1,8 @@
+name: Consul
+description: |
+  A service discovery service.
+version: 0.8.0
+category: Service discovery
+maintainer: Maxime Wojtczak
+license: MIT
+projectURL: https://www.consul.io/

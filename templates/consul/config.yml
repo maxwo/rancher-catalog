@@ -1,8 +1,0 @@
-name: Healthcheck
-description: |
-  A dummy project implementing a health check for testing purposes.
-version: 0.1.0
-category: Testing
-maintainer: Maxime Wojtczak
-license: MIT
-projectURL: https://github.com/maxwo/healthcheck
