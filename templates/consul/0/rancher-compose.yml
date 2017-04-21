@@ -1,0 +1,14 @@
+version: '2'
+services:
+  consul-agent:
+    scale: 1
+    start_on_create: true
+  consul2:
+    scale: 1
+    start_on_create: true
+  consul3:
+    scale: 1
+    start_on_create: true
+  consul1:
+    scale: 1
+    start_on_create: true
