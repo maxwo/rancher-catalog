@@ -1,8 +1,8 @@
-name: Consul
+name: Consul Cluster
 description: |
   A service discovery service.
 version: 0.8.0
 category: Service discovery
-maintainer: Maxime Wojtczak
-license: MIT
+maintainer: Hashicorp
+license: Mozilla Public License 2.0
 projectURL: https://www.consul.io/

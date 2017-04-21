@@ -1,6 +1,6 @@
 version: '2'
 services:
-  consul-agent:
+  agent:
     scale: 1
     start_on_create: true
   consul2:

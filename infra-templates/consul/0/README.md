@@ -1,1 +1,1 @@
-# Consul
+# Consul Cluster

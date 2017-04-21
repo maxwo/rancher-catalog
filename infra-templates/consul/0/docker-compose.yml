@@ -1,6 +1,6 @@
 version: '2'
 services:
-  consul-agent:
+  agent:
     image: consul:latest
     hostname: consul-agent
     ports:
@@ -16,6 +16,15 @@ services:
     - -retry-join=consul1
     - -client=0.0.0.0
     - -bind=0.0.0.0
+  consul1:
+    image: consul:latest
+    hostname: consul1
+    command:
+    - -server
+    - -bootstrap-expect
+    - '3'
+    - -ui-dir
+    - /ui
   consul2:
     image: consul:latest
     hostname: consul2
@@ -38,12 +47,3 @@ services:
     - -server
     - -join
     - consul1
-  consul1:
-    image: consul:latest
-    hostname: consul1
-    command:
-    - -server
-    - -bootstrap-expect
-    - '3'
-    - -ui-dir
-    - /ui
