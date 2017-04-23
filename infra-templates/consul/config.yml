@@ -1,8 +1,8 @@
 name: Consul Cluster
 description: |
-  A service discovery service.
+  A service discovery.
 version: 0.8.0
-category: Service discovery
+category: Service
 maintainer: Hashicorp
 license: Mozilla Public License 2.0
 projectURL: https://www.consul.io/
