@@ -3,13 +3,21 @@ version: '2'
 catalog:
   name: "Consul"
   description: "Service discovery by Hashicorp."
-  version: "0.8.0"
+  version: "0.8.1"
   uuid: consul
 
 services:
   agent:
     scale: 1
     start_on_create: true
+    health_check:
+      port: 8500
+      request_line: GET /v1/status/leader HTTP/1.0
+      strategy: recreate
   server:
     scale: 3
     start_on_create: true
+    health_check:
+      port: 8500
+      request_line: GET /v1/status/leader HTTP/1.0
+      strategy: recreate
