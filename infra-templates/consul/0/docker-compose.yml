@@ -11,8 +11,11 @@ services:
     - -retry-join=consul-server-1
     - -retry-join=consul-server-2
     - -retry-join=consul-server-3
+    - -disable-host-node-id
     - -client=0.0.0.0
     - -bind=0.0.0.0
+    labels:
+    - io.rancher.scheduler.global: 'true'
 
   server:
     image: consul:latest
@@ -23,3 +26,4 @@ services:
     - -retry-join=consul-server-1
     - -retry-join=consul-server-2
     - -retry-join=consul-server-3
+    - -disable-host-node-id
