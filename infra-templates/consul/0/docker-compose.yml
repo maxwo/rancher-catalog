@@ -4,23 +4,22 @@ services:
   agent:
     image: consul:latest
     ports:
-    - 8400:8400/tcp
     - 8500:8500/tcp
-    - 8600:53/tcp
-    expose:
-    - '8400'
-    - '8500'
-    - '8600'
     command:
-    - -ui-dir=/ui
-    - -retry-join=consul1
+    - agent
+    - -ui
+    - -retry-join=consul-server-1
+    - -retry-join=consul-server-2
+    - -retry-join=consul-server-3
     - -client=0.0.0.0
     - -bind=0.0.0.0
 
   server:
     image: consul:latest
     command:
+    - agent
     - -server
     - -bootstrap-expect=3
-    - -ui-dir=/ui
-    - -join=server-1
+    - -retry-join=consul-server-1
+    - -retry-join=consul-server-2
+    - -retry-join=consul-server-3
