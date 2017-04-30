@@ -1,0 +1,5 @@
+resume:
+  image: maxwo/resume:latest
+  labels:
+    SERVICE_TAGS: traefik.frontend.rule=PathPrefixStrip:/resume
+    SERVICE_80_CHECK_HTTP: /

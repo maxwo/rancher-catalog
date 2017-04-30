@@ -1,5 +1,5 @@
 healthcheck:
-  image: maxwoj/healthcheck:latest
+  image: maxwo/healthcheck:latest
   labels:
     SERVICE_TAGS: traefik.tags=test,traefik.frontend.rule=PathPrefixStrip:/healthcheck
     SERVICE_8080_CHECK_HTTP: /healthcheck

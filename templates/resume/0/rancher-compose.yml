@@ -1,0 +1,14 @@
+version: '2'
+
+catalog:
+  name: "Résumé"
+  description: "A résumé wrapped in a docker image."
+  version: "0.1.0"
+  uuid: resume
+
+healthcheck:
+  scale: 1
+  health_check:
+    port: 80
+    request_line: GET / HTTP/1.0
+    strategy: none

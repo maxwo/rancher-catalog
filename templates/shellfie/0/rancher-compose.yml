@@ -1,0 +1,14 @@
+version: '2'
+
+catalog:
+  name: "Shellfie"
+  description: "A shellfie creator, to illustrate use of node streams thanks to Browserify."
+  version: "0.1.0"
+  uuid: shellfie
+
+shellfie:
+  scale: 1
+  health_check:
+    port: 80
+    request_line: GET / HTTP/1.0
+    strategy: none

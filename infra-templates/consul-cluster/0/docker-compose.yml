@@ -2,7 +2,6 @@ version: '2'
 services:
   agent:
     image: consul:latest
-    hostname: consul-agent
     ports:
     - 8400:8400/tcp
     - 8500:8500/tcp
@@ -18,7 +17,6 @@ services:
     - -bind=0.0.0.0
   server:
     image: consul:latest
-    hostname: consul1
     command:
     - -server
     - -bootstrap-expect=3

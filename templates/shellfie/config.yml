@@ -1,0 +1,8 @@
+name: Shellfie
+description: |
+  A shellfie creator, to illustrate use of node streams thanks to Browserify.
+version: 0.1.0
+category: Personal
+maintainer: Maxime Wojtczak
+license: MIT
+projectURL: https://github.com/maxwo/resume
