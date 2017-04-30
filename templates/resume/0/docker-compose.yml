@@ -3,3 +3,4 @@ resume:
   labels:
     SERVICE_TAGS: traefik.frontend.rule=PathPrefixStrip:/resume
     SERVICE_80_CHECK_HTTP: /
+    traefik.frontend.rule: PathPrefixStrip:/resume
