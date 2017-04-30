@@ -1,4 +1,11 @@
 version: '2'
+
+catalog:
+  name: "Consul"
+  description: "Service discovery by Hashicorp."
+  version: "0.8.0"
+  uuid: consul
+
 services:
   agent:
     scale: 1

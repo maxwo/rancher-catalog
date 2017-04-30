@@ -1,4 +1,5 @@
 version: '2'
+
 services:
   agent:
     image: consul:latest
@@ -15,6 +16,7 @@ services:
     - -retry-join=consul1
     - -client=0.0.0.0
     - -bind=0.0.0.0
+
   server:
     image: consul:latest
     command:

@@ -1,6 +1,6 @@
-name: Consul Cluster
+name: Consul
 description: |
-  A service discovery.
+  Service discovery by Hashicorp.
 version: 0.8.0
 category: Service
 maintainer: Hashicorp
