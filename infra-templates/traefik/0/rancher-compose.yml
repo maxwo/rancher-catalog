@@ -1,0 +1,33 @@
+version: '2'
+
+catalog:
+  name: "Traefik"
+  description: "Træfik (pronounced like traffic) is a modern HTTP reverse proxy and load balancer made to deploy microservices with ease."
+  version: "1.2.3"
+  uuid: traefik
+  questions:
+    - variable: ENDPOINT
+      label: Rancher endpoint
+      description: |
+        URL to the Rancher backend.
+      default: http://127.0.0.1:8080/
+      required: true
+    - variable: ACCESS_KEY
+      label: Rancher access key
+      description: |
+        Access key to the Rancher backend.
+      required: true
+    - variable: SECRET_KEY
+      label: Rancher secret key
+      description: |
+        Secret key to the Rancher backend.
+      required: true
+
+
+services:
+  traefik:
+    start_on_create: true
+    health_check:
+      port: 8080
+      request_line: GET /health HTTP/1.0
+      strategy: recreate

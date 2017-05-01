@@ -1,0 +1,8 @@
+name: Traefik
+description: |
+  Træfik (pronounced like traffic) is a modern HTTP reverse proxy and load balancer made to deploy microservices with ease.
+version: 1.2.3
+category: Reverse-proxy
+maintainer: Containous
+license: MIT License
+projectURL: https://traefik.io/

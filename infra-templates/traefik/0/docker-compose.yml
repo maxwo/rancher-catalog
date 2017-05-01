@@ -1,0 +1,18 @@
+version: '2'
+
+services:
+  traefik:
+    image: traefik:1.2.3
+    ports:
+      - 80:80/tcp
+      - 443:443/tcp
+      - 8080:8080/tcp
+    command:
+      - --web
+      - --rancher
+      - --rancher.endpoint=${ENDPOINT}
+      - --rancher.accesskey=${ACCESS_KEY}
+      - --rancher.secretkey=${SECRET_KEY}
+    labels:
+      io.rancher.container.pull_image: always
+      io.rancher.scheduler.global: 'true'
