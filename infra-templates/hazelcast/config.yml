@@ -1,0 +1,8 @@
+name: Hazelcast
+description: |
+  Hazelcast, the Leading In-Memory Data Grid.
+version: 3.8
+category: Cache system
+maintainer: Hazelcast
+license: Apache 2.0
+projectURL: https://hazelcast.org/

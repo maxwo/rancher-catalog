@@ -1,0 +1,15 @@
+version: '2'
+
+catalog:
+  name: "Hazelcast"
+  description: "Hazelcast, the Leading In-Memory Data Grid."
+  version: "3.8"
+  uuid: hazelcast
+
+services:
+  node:
+    scale: 3
+    start_on_create: true
+    health_check:
+      port: 5701
+      strategy: recreate
