@@ -4,3 +4,4 @@ shellfie:
     SERVICE_TAGS: traefik.frontend.rule=PathPrefixStrip:/shellfie
     SERVICE_80_CHECK_HTTP: /
     traefik.frontend.rule: PathPrefixStrip:/shellfie
+    traefik.enabled: true
