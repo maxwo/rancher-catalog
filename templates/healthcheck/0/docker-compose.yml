@@ -4,3 +4,5 @@ healthcheck:
     SERVICE_TAGS: traefik.frontend.rule=PathPrefixStrip:/healthcheck
     SERVICE_8080_CHECK_HTTP: /healthcheck
     traefik.frontend.rule: PathPrefixStrip:/healthcheck
+    traefik.enabled: true
+    traefik.port: 8080

@@ -5,3 +5,4 @@ shellfie:
     SERVICE_80_CHECK_HTTP: /
     traefik.frontend.rule: PathPrefixStrip:/shellfie
     traefik.enabled: true
+    traefik.port: 80
