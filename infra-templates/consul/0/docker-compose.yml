@@ -2,7 +2,7 @@ version: '2'
 
 services:
   agent:
-    image: consul:latest
+    image: consul:0.8.0
     ports:
     - 8500:8500/tcp
     command:
@@ -16,9 +16,10 @@ services:
     - -bind=0.0.0.0
     labels:
       io.rancher.scheduler.global: 'true'
+      io.rancher.container.pull_image: 'always'
 
   server:
-    image: consul:latest
+    image: consul:0.8.0
     command:
     - agent
     - -server
@@ -28,3 +29,5 @@ services:
     - -retry-join=consul-server-3
     - -client=0.0.0.0
     - -disable-host-node-id
+    labels:
+      io.rancher.container.pull_image: 'always'

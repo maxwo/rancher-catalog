@@ -3,3 +3,5 @@ version: '2'
 services:
   node:
     image: maxwo/hazelcast-rancher
+    labels:
+      io.rancher.container.pull_image: 'always'
